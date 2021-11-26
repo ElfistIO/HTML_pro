@@ -176,6 +176,37 @@ body {
   }
 }
 
+.hero_product {
+  position: relative;
+  display: flex;
+  height: 777px;
+  background: #f7f7f7;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 600px;
+  .hero_product_left {
+    height: 23px;
+    width: 13px;
+    background: rgba(42, 42, 42, 0.15);
+    padding: 12px 17px;
+  }
+  .hero_product_right {
+    height: 23px;
+    width: 13px;
+    background: rgba(42, 42, 42, 0.15);
+    padding: 12px 17px;
+  }
+}
+.hero_product_description {
+  position: absolute;
+  top: 711px;
+  width: 1141px;
+  margin: 0 auto;
+  border: 1px solid #eaeaea;
+  background: #ffffff;
+  text-align: center;
+}
+
 .categories_container {
   max-width: $width-site;
   margin: 0 auto;
@@ -247,6 +278,9 @@ body {
       background: #f8f8f8;
       display: flex;
       flex-direction: column;
+      .products_card_img {
+        margin-bottom: 25px;
+      }
       .products_card_img_shadow {
         position: absolute;
         width: 360px;
@@ -277,6 +311,7 @@ body {
         font-size: 13px;
         line-height: 16px;
         color: #000000;
+        text-decoration: none;
       }
       .products_card_text {
         margin-top: 12px;
@@ -327,10 +362,30 @@ body {
     align-items: center;
     justify-content: space-between;
     .products_filter_list {
+      position: relative;
       margin-right: 400px;
       width: 340px;
       font-size: 14px;
       line-height: 17px;
+      .products_filter_list_menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 150px;
+        width: 59px;
+        height: 83px;
+        background: #ffffff;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        font-size: 14px;
+        line-height: 16px;
+        color: #6f6e6e;
+        padding: 10px 10px;
+        align-items: flex-start;
+        justify-content: space-between;
+        .products_filter_list_menu_text {
+          margin-left: 10px;
+        }
+      }
       .products_filter_img_drop {
         margin-left: 10px;
         margin-right: 28px;
@@ -420,6 +475,11 @@ body {
       font-size: 16px;
       line-height: 19px;
       color: rgb(180, 180, 180);
+    }
+  }
+  .products_filter_list:hover {
+    .products_filter_list_menu {
+      display: flex;
     }
   }
 }
