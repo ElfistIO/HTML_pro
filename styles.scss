@@ -928,6 +928,78 @@ body {
   }
 }
 
+.login_container {
+  max-width: $width-site;
+  margin: 0 auto;
+  .login_box {
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    .login_form_box {
+      display: flex;
+      flex-direction: column;
+      margin-right: 128px;
+      .login_form_header {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 20px;
+      }
+      .login_form_input {
+        border: 1px solid #a4a4a4;
+        width: 358px;
+        height: 42px;
+        margin-bottom: 20px;
+        padding-left: 17px;
+      }
+      .login_form_checkbox {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 33px;
+        display: flex;
+        align-items: center;
+        .login_form_checkbox_margin {
+          margin-left: 10px;
+          margin-right: 20px;
+        }
+      }
+      .login_form_text_gray {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin-bottom: 39px;
+        width: 358px;
+      }
+      .login_form_button {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        background: #f16d7f;
+        padding: 16px 29px;
+        width: 111px;
+        .login_form_button_arrow {
+          margin-left: 20px;
+        }
+      }
+    }
+    .login_form_text_box {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      .login_form_text {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1172px) {
   .menu_left {
     margin-left: 32px;
@@ -1026,6 +1098,10 @@ body {
     margin-right: 97px;
   }
   .cart_box {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .login_box {
     margin-left: 16px;
     margin-right: 16px;
   }
@@ -1130,6 +1206,13 @@ body {
   .footer_container_top {
     height: 100%;
     background-size: cover;
+  }
+  .login_form_box {
+    margin-right: 22px !important;
+  }
+  .login_form_text_box {
+    font-size: 16px !important;
+    line-height: 19px !important;
   }
 }
 
@@ -1350,6 +1433,13 @@ body {
     margin: 0 auto;
     .cart_product_card {
       overflow: hidden;
+    }
+  }
+  .login_box {
+    flex-direction: column;
+    .login_form_box {
+      margin-right: 0 !important;
+      margin: 0 auto;
     }
   }
 }
