@@ -77,6 +77,9 @@ body {
       margin-top: 16px;
       right: 0;
     }
+    .main_menu_list {
+      list-style: none;
+    }
     .main_menu_main_heading {
       font-style: normal;
       font-weight: bold;
@@ -103,6 +106,7 @@ body {
       color: #6f6e6e;
       margin-top: 12px;
       margin-left: 55px;
+      text-decoration: none;
     }
   }
   .hero {
