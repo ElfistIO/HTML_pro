@@ -91,6 +91,7 @@ body {
 }
 
 .hero_container .main_menu {
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -130,6 +131,10 @@ body {
   margin-top: 24px;
   margin-left: 34px;
   text-transform: uppercase;
+}
+
+.hero_container .main_menu .main_menu_text_margin {
+  margin-top: 12px;
 }
 
 .hero_container .main_menu .main_menu_text {
