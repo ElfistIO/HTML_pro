@@ -61,7 +61,7 @@ body {
   background: #f1e4e6;
   position: relative;
   .main_menu {
-    display: none;
+    
     position: absolute;
     right: 0;
     top: 0;
@@ -85,6 +85,7 @@ body {
       color: #000000;
       margin-top: 37px;
       margin-left: 34px;
+      text-transform: uppercase;
     }
     .main_menu_heading {
       font-style: normal;
@@ -94,6 +95,7 @@ body {
       color: #f16d7f;
       margin-top: 24px;
       margin-left: 34px;
+      text-transform: uppercase;
     }
     .main_menu_text {
       font-style: normal;

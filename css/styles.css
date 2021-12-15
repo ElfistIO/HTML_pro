@@ -91,7 +91,6 @@ body {
 }
 
 .hero_container .main_menu {
-  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -119,6 +118,7 @@ body {
   color: #000000;
   margin-top: 37px;
   margin-left: 34px;
+  text-transform: uppercase;
 }
 
 .hero_container .main_menu .main_menu_heading {
@@ -129,6 +129,7 @@ body {
   color: #f16d7f;
   margin-top: 24px;
   margin-left: 34px;
+  text-transform: uppercase;
 }
 
 .hero_container .main_menu .main_menu_text {
