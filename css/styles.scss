@@ -348,6 +348,8 @@ body {
     }
   }
   .categories_text {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     text-align: center;
     font-size: 16px;
