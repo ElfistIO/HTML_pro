@@ -1015,6 +1015,7 @@ body {
   line-height: 30px;
   color: #222224;
   margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
 .footer_container_top .footer_box_top .footer_subscribe .footer_subscribe_text_top {
@@ -1022,6 +1023,7 @@ body {
   font-weight: 700;
   line-height: 38px;
   color: #222224;
+  text-transform: uppercase;
 }
 
 .footer_container_top .footer_box_top .footer_subscribe_input {
@@ -1030,10 +1032,40 @@ body {
   width: 323px;
   background: #e1e1e1;
   border: none;
+  padding-left: 22px;
+}
+
+.footer_container_top .footer_box_top .footer_subscribe_input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.footer_container_top .footer_box_top .footer_subscribe_input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.footer_container_top .footer_box_top .footer_subscribe_input:focus::-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.footer_container_top .footer_box_top .footer_subscribe_input:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.footer_container_top .footer_box_top .footer_subscribe_input:focus,
+.footer_container_top .footer_box_top .footer_subscribe_input:hover {
+  outline: 1px solid #e05c6e;
+  cursor: pointer;
 }
 
 .footer_container_top .footer_box_top .footer_subscribe_input::-webkit-input-placeholder {
-  padding-left: 22px;
   font-size: 14px;
   line-height: 17px;
   color: #222224;
@@ -1042,7 +1074,6 @@ body {
 }
 
 .footer_container_top .footer_box_top .footer_subscribe_input:-ms-input-placeholder {
-  padding-left: 22px;
   font-size: 14px;
   line-height: 17px;
   color: #222224;
@@ -1051,7 +1082,6 @@ body {
 }
 
 .footer_container_top .footer_box_top .footer_subscribe_input::-ms-input-placeholder {
-  padding-left: 22px;
   font-size: 14px;
   line-height: 17px;
   color: #222224;
@@ -1060,7 +1090,6 @@ body {
 }
 
 .footer_container_top .footer_box_top .footer_subscribe_input::placeholder {
-  padding-left: 22px;
   font-size: 14px;
   line-height: 17px;
   color: #222224;
@@ -1080,6 +1109,11 @@ body {
   border-top-right-radius: 30px;
   padding: 17px 20px;
   border: none;
+}
+
+.footer_container_top .footer_box_top .footer_subscribe_button:hover,
+.footer_container_top .footer_box_top .footer_subscribe_button:focus {
+  cursor: pointer;
 }
 
 .footer_container_bottom {
@@ -1397,31 +1431,89 @@ body {
 }
 
 .login_container .login_box .login_form_box .login_form_input {
-  border: 1px solid #a4a4a4;
+  outline: 1px solid #A4A4A4;
+  border: none;
   width: 358px;
   height: 42px;
   margin-bottom: 20px;
   padding-left: 17px;
 }
 
+.login_container .login_box .login_form_box .login_form_input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.login_container .login_box .login_form_box .login_form_input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.login_container .login_box .login_form_box .login_form_input:focus::-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.login_container .login_box .login_form_box .login_form_input:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.login_container .login_box .login_form_box .login_form_input:focus,
+.login_container .login_box .login_form_box .login_form_input:hover {
+  outline: 1px solid #e05c6e;
+  cursor: pointer;
+  border: none;
+}
+
 .login_container .login_box .login_form_box .login_form_checkbox {
+  margin-top: 10px;
+  margin-bottom: 33px;
+}
+
+.login_container .login_box .login_form_box .login_form_checkbox .login_form_checkbox_label {
+  margin-left: 27px;
+  margin-right: 20px;
+  position: relative;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
+  font-family: 'Lato';
   color: #000000;
-  margin-top: 10px;
-  margin-bottom: 33px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.login_container .login_box .login_form_box .login_form_checkbox .login_form_checkbox_margin {
-  margin-left: 10px;
-  margin-right: 20px;
+.login_container .login_box .login_form_box .login_form_checkbox .login_form_checkbox_label:before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #A4A4A4;
+  position: absolute;
+  left: -27px;
+}
+
+.login_container .login_box .login_form_box .login_form_checkbox .login_form_checkbox_label:after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #f16d7f;
+  position: absolute;
+  left: -23px;
+  top: 1px;
+  display: none;
+}
+
+.login_container .login_box .login_form_box .login_form_checkbox .login_form_checkbox_input {
+  display: none;
+}
+
+.login_container .login_box .login_form_box .login_form_checkbox .login_form_checkbox_input:checked + .login_form_checkbox_label:after {
+  display: block;
 }
 
 .login_container .login_box .login_form_box .login_form_text_gray {
@@ -1434,18 +1526,32 @@ body {
 }
 
 .login_container .login_box .login_form_box .login_form_button {
-  text-decoration: none;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
   background: #f16d7f;
-  padding: 16px 29px;
-  width: 111px;
+  width: 167px;
+  height: 50px;
+  border: none;
 }
 
 .login_container .login_box .login_form_box .login_form_button .login_form_button_arrow {
   margin-left: 20px;
+  fill: white;
+}
+
+.login_container .login_box .login_form_box .login_form_button:hover,
+.login_container .login_box .login_form_box .login_form_button:focus {
+  cursor: pointer;
+  background: white;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+}
+
+.login_container .login_box .login_form_box .login_form_button:hover .login_form_button_arrow,
+.login_container .login_box .login_form_box .login_form_button:focus .login_form_button_arrow {
+  fill: #f16d7f;
 }
 
 .login_container .login_box .login_form_text_box {

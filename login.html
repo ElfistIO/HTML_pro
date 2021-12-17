@@ -129,22 +129,35 @@
     </header>
     <main>
         <div class="login_container">
-            <div class="login_box">
-                <div class="login_form_box">
-                        <p class="login_form_header">Your Name</p>
-                        <input type="text" placeholder="First Name" class="login_form_input">
-                        <input type="text" placeholder="Last Name" class="login_form_input">
-                        <div class="login_form_checkbox">
-                            <input type="radio" name="Male">
-                            <label for="Male" class="login_form_checkbox_margin">Male</label>
-                            <input type="radio" name="Female">
-                            <label for="Female" class="login_form_checkbox_margin">Female</label>
-                        </div>
-                        <p class="login_form_header">Login details</p>
-                        <input type="text" placeholder="Email" class="login_form_input">
-                        <input type="text" placeholder="Password" class="login_form_input">
-                        <p class="login_form_text_gray">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                        <a href="#" class="login_form_button">JOIN NOW <img src="image/arrow.svg" alt="" class="login_form_button_arrow"></a>
+            <form action="" class="login_box">
+                <div class="login_form_wrp">
+                    <fieldset class="login_form_box">
+                        <legend class="login_form_header">Your Name</legend>
+                            <input id="First Name" type="text" placeholder="First Name" class="login_form_input" required>
+                            <label for="First Name" class="visually-hidden">First Name</label>
+                            <input id="Last Name" type="text" placeholder="Last Name" class="login_form_input" required>
+                            <label for="Last Name" class="visually-hidden">Last Name</label>
+                            <div class="login_form_checkbox">
+                                <input type="radio" name="gender" value="male" id="Male" class="login_form_checkbox_input">
+                                <label for="Male" class="login_form_checkbox_label">Male</label>
+                                <input type="radio" name="gender" value="female" id="Female" class="login_form_checkbox_input">
+                                <label for="Female" class="login_form_checkbox_label">Female</label>
+                            </div>
+                    </fieldset>
+                    <fieldset class="login_form_box">
+                        <legend class="login_form_header">Login details</legend>
+                            <input id="email" type="email" placeholder="Email" class="login_form_input" required>
+                            <label for="email" class="visually-hidden">email</label>
+                            <input id="password" type="password" placeholder="Password" class="login_form_input" required>
+                            <label for="password" class="visually-hidden">password</label>
+                            <p class="login_form_text_gray">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                            <button type="submit" class="login_form_button">JOIN NOW 
+                                <svg class="login_form_button_arrow" width="17" height="10" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"/>
+                                </svg>
+                            </button>
+                    </fieldset>
                 </div>
                 <div class="login_form_text_box">
                     <p>LOYALTY HAS ITS PERKS</p><br>
@@ -155,7 +168,7 @@
                     <p class="login_form_text"><img src="image/check.svg" alt=""> Early access to products</p>
                     <p class="login_form_text"><img src="image/check.svg" alt=""> Exclusive offers & rewards</p>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
     <footer>
@@ -169,10 +182,12 @@
                     <p class="footer_feedback_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum“</i></p>
                 </div>
                 <div class="footer_subscribe">
-                    <h4 class="footer_subscribe_text"><b class="footer_subscribe_text_top">SUBSCRIBE</b><br>FOR OUR NEWLETTER AND PROMOTION</h4>
-                    <form action="#">
-                        <input type="text" placeholder="Enter Your Email" class="footer_subscribe_input">
-                        <a href="#" class="footer_subscribe_button">Subscribe</a>
+                        <p class="footer_subscribe_text_top">subscribe</p>
+                        <p class="footer_subscribe_text">for our newletter and promotion</p>
+                    <form action="">
+                        <input type="text" id="subscribe" placeholder="Enter Your Email" class="footer_subscribe_input">
+                        <label for="subscribe" class="visually-hidden">subscribe</label>
+                        <button type="submit" class="footer_subscribe_button">Subscribe</button>
                     </form>
                 </div>
             </div>
