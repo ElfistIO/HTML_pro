@@ -49,6 +49,16 @@ body {
       margin-left: 33px;
       display: flex;
       position: relative;
+      .menu_item_link {
+        background-color: #222222;
+        fill: white;
+      }
+      .menu_item_link:focus,
+      .menu_item_link:hover {
+        cursor: pointer;
+        outline: none;
+        fill: gray;
+      }
       .menu_item_cart_nr {
         background-color: #f16d7f;
         width: 19px;
@@ -64,6 +74,7 @@ body {
     .menu_item_drop {
       align-items: flex-end;
       margin-left: 33px;
+      margin-top: 2px;
       display: flex;
       position: relative;
     }

@@ -76,6 +76,18 @@ body {
   position: relative;
 }
 
+.nav_container .nav .menu_item .menu_item_link {
+  background-color: #222222;
+  fill: white;
+}
+
+.nav_container .nav .menu_item .menu_item_link:focus,
+.nav_container .nav .menu_item .menu_item_link:hover {
+  cursor: pointer;
+  outline: none;
+  fill: gray;
+}
+
 .nav_container .nav .menu_item .menu_item_cart_nr {
   background-color: #f16d7f;
   width: 19px;
@@ -93,6 +105,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-left: 33px;
+  margin-top: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
