@@ -17,11 +17,11 @@ body {
   margin: -1px;
 }
 
-.nav_container {
+.nav__container {
   background-color: #222222;
 }
 
-.nav_container .nav {
+.nav__container .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,7 @@ body {
   padding-bottom: 18px;
 }
 
-.nav_container .nav .menu_left {
+.nav__container .nav .menu__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,7 @@ body {
           align-items: center;
 }
 
-.nav_container .nav .menu_right {
+.nav__container .nav .menu__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +54,7 @@ body {
           align-items: center;
 }
 
-.nav_container .nav .menu_item_search {
+.nav__container .nav .menu__item_search {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -65,26 +65,26 @@ body {
   position: relative;
 }
 
-.nav_container .nav .menu_item_search:hover,
-.nav_container .nav .menu_item_search:focus {
+.nav__container .nav .menu__item_search:hover,
+.nav__container .nav .menu__item_search:focus {
   cursor: pointer;
   outline: none;
   fill: gray;
 }
 
-.nav_container .nav .menu_item_link {
+.nav__container .nav .menu__item_link {
   background-color: #222222;
   fill: white;
 }
 
-.nav_container .nav .menu_item_link:focus,
-.nav_container .nav .menu_item_link:hover {
+.nav__container .nav .menu__item_link:focus,
+.nav__container .nav .menu__item_link:hover {
   cursor: pointer;
   outline: none;
   fill: gray;
 }
 
-.nav_container .nav .menu_item {
+.nav__container .nav .menu__item {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -95,7 +95,7 @@ body {
   position: relative;
 }
 
-.nav_container .nav .menu_item .menu_item_cart_nr {
+.nav__container .nav .menu__item .menu__item_cart-nr {
   background-color: #f16d7f;
   width: 19px;
   height: 19px;
@@ -107,7 +107,7 @@ body {
   top: -8px;
 }
 
-.nav_container .nav .menu_item_drop {
+.nav__container .nav .menu__item_drop {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -118,20 +118,20 @@ body {
   display: flex;
 }
 
-.nav_container .nav .menu_item_drop_button {
+.nav__container .nav .menu__item_drop_button {
   background-color: #222222;
   border: none;
   fill: white;
 }
 
-.nav_container .nav .menu_item_drop_button:hover,
-.nav_container .nav .menu_item_drop_button:focus {
+.nav__container .nav .menu__item_drop_button:hover,
+.nav__container .nav .menu__item_drop_button:focus {
   cursor: pointer;
   outline: none;
   fill: gray;
 }
 
-.nav_container .main_menu {
+.nav__container .main_menu {
   display: none;
   position: absolute;
   top: 76px;
@@ -142,18 +142,18 @@ body {
   z-index: 1;
 }
 
-.nav_container .main_menu .main_menu_close {
+.nav__container .main_menu .main_menu_close {
   position: absolute;
   margin-right: 16px;
   margin-top: 16px;
   right: 0;
 }
 
-.nav_container .main_menu .main_menu_list {
+.nav__container .main_menu .main_menu_list {
   list-style: none;
 }
 
-.nav_container .main_menu .main_menu_main_heading {
+.nav__container .main_menu .main_menu_main_heading {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -164,7 +164,7 @@ body {
   text-transform: uppercase;
 }
 
-.nav_container .main_menu .main_menu_heading {
+.nav__container .main_menu .main_menu_heading {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -175,11 +175,11 @@ body {
   text-transform: uppercase;
 }
 
-.nav_container .main_menu .main_menu_text_margin {
+.nav__container .main_menu .main_menu_text_margin {
   margin-top: 12px;
 }
 
-.nav_container .main_menu .main_menu_text {
+.nav__container .main_menu .main_menu_text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -190,11 +190,11 @@ body {
   text-decoration: none;
 }
 
-.nav_container .display-block {
+.nav__container .display-block {
   display: block;
 }
 
-.nav_container .wrp {
+.nav__container .wrp {
   width: 100%;
   display: none;
 }
@@ -1566,10 +1566,10 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1172px) {
-  .menu_left {
+  .menu__left {
     margin-left: 32px;
   }
-  .menu_right {
+  .menu__right {
     margin-right: 32px;
   }
   .hero {
@@ -1847,10 +1847,10 @@ body {
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .menu_left {
+  .menu__left {
     margin-left: 32px;
   }
-  .menu_right {
+  .menu__right {
     margin-right: 32px;
   }
   .hero {

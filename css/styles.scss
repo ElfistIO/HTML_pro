@@ -19,7 +19,7 @@ body {
   margin: -1px;
 }
 
-.nav_container {
+.nav__container {
   background-color: #222222;
   .nav {
     display: flex;
@@ -28,44 +28,44 @@ body {
     margin: 0 auto;
     padding-top: 18px;
     padding-bottom: 18px;
-    .menu_left {
+    .menu__left {
       display: flex;
       list-style-type: none;
       align-items: center;
     }
-    .menu_right {
+    .menu__right {
       display: flex;
       list-style-type: none;
       align-items: center;
     }
-    .menu_item_search {
+    .menu__item_search {
       align-items: flex-end;
       margin-left: 33px;
       display: flex;
       position: relative;
     }
-    .menu_item_search:hover,
-    .menu_item_search:focus {
+    .menu__item_search:hover,
+    .menu__item_search:focus {
       cursor: pointer;
       outline: none;
       fill: gray;
     }
-    .menu_item_link {
+    .menu__item_link {
       background-color: #222222;
       fill: white;
     }
-    .menu_item_link:focus,
-    .menu_item_link:hover {
+    .menu__item_link:focus,
+    .menu__item_link:hover {
       cursor: pointer;
       outline: none;
       fill: gray;
     }
-    .menu_item {
+    .menu__item {
       align-items: flex-end;
       margin-left: 33px;
       display: flex;
       position: relative;
-      .menu_item_cart_nr {
+      .menu__item_cart-nr {
         background-color: #f16d7f;
         width: 19px;
         height: 19px;
@@ -77,19 +77,19 @@ body {
         top: -8px;
       }
     }
-    .menu_item_drop {
+    .menu__item_drop {
       align-items: flex-end;
       margin-left: 33px;
       margin-top: 2px;
       display: flex;
     }
-    .menu_item_drop_button {
+    .menu__item_drop_button {
       background-color: #222222;
       border: none;
       fill: white;
     }
-    .menu_item_drop_button:hover,
-    .menu_item_drop_button:focus {
+    .menu__item_drop_button:hover,
+    .menu__item_drop_button:focus {
       cursor: pointer;
       outline: none;
       fill: gray;
@@ -1127,10 +1127,10 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1172px) {
-  .menu_left {
+  .menu__left {
     margin-left: 32px;
   }
-  .menu_right {
+  .menu__right {
     margin-right: 32px;
   }
   .hero {
@@ -1351,10 +1351,10 @@ body {
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .menu_left {
+  .menu__left {
     margin-left: 32px;
   }
-  .menu_right {
+  .menu__right {
     margin-right: 32px;
   }
   .hero {
