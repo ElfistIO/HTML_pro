@@ -28,44 +28,44 @@ body {
     margin: 0 auto;
     padding-top: 18px;
     padding-bottom: 18px;
-    .menu__left {
+    .nav__menu__left {
       display: flex;
       list-style-type: none;
       align-items: center;
     }
-    .menu__right {
+    .nav__menu__right {
       display: flex;
       list-style-type: none;
       align-items: center;
     }
-    .menu__item_search {
+    .nav__menu__search {
       align-items: flex-end;
       margin-left: 33px;
       display: flex;
       position: relative;
     }
-    .menu__item_search:hover,
-    .menu__item_search:focus {
+    .nav__menu__search:hover,
+    .nav__menu__search:focus {
       cursor: pointer;
       outline: none;
       fill: gray;
     }
-    .menu__item_link {
+    .nav__menu__link {
       background-color: #222222;
       fill: white;
     }
-    .menu__item_link:focus,
-    .menu__item_link:hover {
+    .nav__menu__link:focus,
+    .nav__menu__link:hover {
       cursor: pointer;
       outline: none;
       fill: gray;
     }
-    .menu__item {
+    .nav__menu-item {
       align-items: flex-end;
       margin-left: 33px;
       display: flex;
       position: relative;
-      .menu__item_cart-nr {
+      .nav__menu-item-nr {
         background-color: #f16d7f;
         width: 19px;
         height: 19px;
@@ -77,25 +77,25 @@ body {
         top: -8px;
       }
     }
-    .menu__item_drop {
+    .nav__burger {
       align-items: flex-end;
       margin-left: 33px;
       margin-top: 2px;
       display: flex;
     }
-    .menu__item_drop_button {
+    .nav__burger-button {
       background-color: #222222;
       border: none;
       fill: white;
     }
-    .menu__item_drop_button:hover,
-    .menu__item_drop_button:focus {
+    .nav__burger-button:hover,
+    .nav__burger-button:focus {
       cursor: pointer;
       outline: none;
       fill: gray;
     }
   }
-  .main_menu {
+  .nav__main-menu {
     display: none;
     position: absolute;
     top: 76px;
@@ -104,16 +104,13 @@ body {
     height: 650px;
     background: #ffffff;
     z-index: 1;
-    .main_menu_close {
+    .nav__close {
       position: absolute;
       margin-right: 16px;
       margin-top: 16px;
       right: 0;
     }
-    .main_menu_list {
-      list-style: none;
-    }
-    .main_menu_main_heading {
+    .nav__main-heading {
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -123,7 +120,7 @@ body {
       margin-left: 34px;
       text-transform: uppercase;
     }
-    .main_menu_heading {
+    .nav__sub-heading {
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -133,10 +130,10 @@ body {
       margin-left: 34px;
       text-transform: uppercase;
     }
-    .main_menu_text_margin {
+    .nav__main-menu-margin {
       margin-top: 12px;
     }
-    .main_menu_text {
+    .nav__main-menu-text {
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -149,10 +146,6 @@ body {
   }
   .display-block {
     display: block;
-  }
-  .wrp {
-    width: 100%;
-    display: none;
   }
 }
 
@@ -176,7 +169,7 @@ body {
       right: 100px;
       top: 290px;
       .hero_text:before {
-        content: '';
+        content: "";
         width: 12px;
         height: 96px;
         background-color: #f16d7f;
@@ -1024,7 +1017,7 @@ body {
         margin-bottom: 20px;
       }
       .login_form_input {
-        outline: 1px solid #A4A4A4;
+        outline: 1px solid #a4a4a4;
         border: none;
         width: 358px;
         height: 42px;
@@ -1051,20 +1044,20 @@ body {
           font-weight: 300;
           font-size: 11px;
           line-height: 13px;
-          font-family: 'Lato';
+          font-family: "Lato";
           color: #000000;
         }
         .login_form_checkbox_label:before {
-          content: '';
+          content: "";
           width: 17px;
           height: 17px;
           border-radius: 50%;
-          border: 1px solid #A4A4A4;
+          border: 1px solid #a4a4a4;
           position: absolute;
           left: -27px;
         }
         .login_form_checkbox_label:after {
-          content: '';
+          content: "";
           width: 11px;
           height: 11px;
           border-radius: 50%;
@@ -1077,7 +1070,7 @@ body {
         .login_form_checkbox_input {
           display: none;
         }
-        .login_form_checkbox_input:checked+.login_form_checkbox_label:after {
+        .login_form_checkbox_input:checked + .login_form_checkbox_label:after {
           display: block;
         }
       }
@@ -1085,7 +1078,7 @@ body {
         font-weight: 300;
         font-size: 13px;
         line-height: 16px;
-        color: #B1B1B1;
+        color: #b1b1b1;
         margin-bottom: 39px;
         width: 358px;
       }
@@ -1127,10 +1120,10 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1172px) {
-  .menu__left {
+  .nav__menu__left {
     margin-left: 32px;
   }
-  .menu__right {
+  .nav__menu__right {
     margin-right: 32px;
   }
   .hero {
@@ -1146,7 +1139,7 @@ body {
       margin-right: 34px;
       top: 0 !important;
       .hero_text:before {
-        content: '';
+        content: "";
         width: 12px;
         height: 96px;
         background-color: #f16d7f;
@@ -1351,10 +1344,10 @@ body {
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .menu__left {
+  .nav__menu__left {
     margin-left: 32px;
   }
-  .menu__right {
+  .nav__menu__right {
     margin-right: 32px;
   }
   .hero {
@@ -1372,7 +1365,7 @@ body {
       top: 0 !important;
       left: 0 !important;
       .hero_text:before {
-        content: '';
+        content: "";
         width: 12px;
         height: 75px !important;
         background-color: #f16d7f;
@@ -1421,7 +1414,7 @@ body {
       margin-right: 24px !important;
     }
   }
-  .menu_item {
+  .nav__menu-item {
     display: none !important;
   }
   .categories_container {
