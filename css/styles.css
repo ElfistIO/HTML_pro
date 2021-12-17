@@ -1695,8 +1695,8 @@ body {
     margin-right: 16px;
   }
   .login_box {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
   }
 }
 
@@ -2101,10 +2101,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   .login_box .login_form_box {
     margin-right: 0 !important;
     margin: 0 auto;
+  }
+  .login_form_text_box {
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
