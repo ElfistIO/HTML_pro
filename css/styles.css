@@ -17,11 +17,11 @@ body {
   margin: -1px;
 }
 
-.nav__container {
+.nav {
   background-color: #222222;
 }
 
-.nav__container .nav {
+.nav .nav__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +34,7 @@ body {
   padding-bottom: 18px;
 }
 
-.nav__container .nav .menu__left {
+.nav .nav__container .menu__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,7 @@ body {
           align-items: center;
 }
 
-.nav__container .nav .menu__right {
+.nav .nav__container .menu__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +54,7 @@ body {
           align-items: center;
 }
 
-.nav__container .nav .menu__item_search {
+.nav .nav__container .menu__item_search {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -65,26 +65,26 @@ body {
   position: relative;
 }
 
-.nav__container .nav .menu__item_search:hover,
-.nav__container .nav .menu__item_search:focus {
+.nav .nav__container .menu__item_search:hover,
+.nav .nav__container .menu__item_search:focus {
   cursor: pointer;
   outline: none;
   fill: gray;
 }
 
-.nav__container .nav .menu__item_link {
+.nav .nav__container .menu__item_link {
   background-color: #222222;
   fill: white;
 }
 
-.nav__container .nav .menu__item_link:focus,
-.nav__container .nav .menu__item_link:hover {
+.nav .nav__container .menu__item_link:focus,
+.nav .nav__container .menu__item_link:hover {
   cursor: pointer;
   outline: none;
   fill: gray;
 }
 
-.nav__container .nav .menu__item {
+.nav .nav__container .menu__item {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -95,7 +95,7 @@ body {
   position: relative;
 }
 
-.nav__container .nav .menu__item .menu__item_cart-nr {
+.nav .nav__container .menu__item .menu__item_cart-nr {
   background-color: #f16d7f;
   width: 19px;
   height: 19px;
@@ -107,7 +107,7 @@ body {
   top: -8px;
 }
 
-.nav__container .nav .menu__item_drop {
+.nav .nav__container .menu__item_drop {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -118,20 +118,20 @@ body {
   display: flex;
 }
 
-.nav__container .nav .menu__item_drop_button {
+.nav .nav__container .menu__item_drop_button {
   background-color: #222222;
   border: none;
   fill: white;
 }
 
-.nav__container .nav .menu__item_drop_button:hover,
-.nav__container .nav .menu__item_drop_button:focus {
+.nav .nav__container .menu__item_drop_button:hover,
+.nav .nav__container .menu__item_drop_button:focus {
   cursor: pointer;
   outline: none;
   fill: gray;
 }
 
-.nav__container .main_menu {
+.nav .main_menu {
   display: none;
   position: absolute;
   top: 76px;
@@ -142,18 +142,18 @@ body {
   z-index: 1;
 }
 
-.nav__container .main_menu .main_menu_close {
+.nav .main_menu .main_menu_close {
   position: absolute;
   margin-right: 16px;
   margin-top: 16px;
   right: 0;
 }
 
-.nav__container .main_menu .main_menu_list {
+.nav .main_menu .main_menu_list {
   list-style: none;
 }
 
-.nav__container .main_menu .main_menu_main_heading {
+.nav .main_menu .main_menu_main_heading {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -164,7 +164,7 @@ body {
   text-transform: uppercase;
 }
 
-.nav__container .main_menu .main_menu_heading {
+.nav .main_menu .main_menu_heading {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -175,11 +175,11 @@ body {
   text-transform: uppercase;
 }
 
-.nav__container .main_menu .main_menu_text_margin {
+.nav .main_menu .main_menu_text_margin {
   margin-top: 12px;
 }
 
-.nav__container .main_menu .main_menu_text {
+.nav .main_menu .main_menu_text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -190,11 +190,11 @@ body {
   text-decoration: none;
 }
 
-.nav__container .display-block {
+.nav .display-block {
   display: block;
 }
 
-.nav__container .wrp {
+.nav .wrp {
   width: 100%;
   display: none;
 }
