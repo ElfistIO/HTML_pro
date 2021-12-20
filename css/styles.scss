@@ -999,24 +999,24 @@ body {
   }
 }
 
-.login_container {
+.login {
   max-width: $width-site;
   margin: 0 auto;
-  .login_box {
+  .login__box {
     display: flex;
     padding-top: 64px;
     padding-bottom: 96px;
-    .login_form_box {
+    .login__form-box {
       display: flex;
       flex-direction: column;
       margin-right: 128px;
-      .login_form_header {
+      .login__form-header {
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
         margin-bottom: 20px;
       }
-      .login_form_input {
+      .login__form-input {
         outline: 1px solid #a4a4a4;
         border: none;
         width: 358px;
@@ -1024,20 +1024,20 @@ body {
         margin-bottom: 20px;
         padding-left: 17px;
       }
-      .login_form_input:focus::placeholder {
+      .login__form_input:focus::placeholder {
         opacity: 0;
         transition: opacity 0.3s ease;
       }
-      .login_form_input:focus,
-      .login_form_input:hover {
+      .login__form-input:focus,
+      .login__form-input:hover {
         outline: 1px solid #e05c6e;
         cursor: pointer;
         border: none;
       }
-      .login_form_checkbox {
+      .login__form-checkbox {
         margin-top: 10px;
         margin-bottom: 33px;
-        .login_form_checkbox_label {
+        .login__form-checkbox-label {
           margin-left: 27px;
           margin-right: 20px;
           position: relative;
@@ -1047,7 +1047,7 @@ body {
           font-family: "Lato";
           color: #000000;
         }
-        .login_form_checkbox_label:before {
+        .login__form-checkbox-label:before {
           content: "";
           width: 17px;
           height: 17px;
@@ -1056,7 +1056,7 @@ body {
           position: absolute;
           left: -27px;
         }
-        .login_form_checkbox_label:after {
+        .login__form-checkbox-label:after {
           content: "";
           width: 11px;
           height: 11px;
@@ -1067,14 +1067,14 @@ body {
           top: 1px;
           display: none;
         }
-        .login_form_checkbox_input {
+        .login__form-checkbox-input {
           display: none;
         }
-        .login_form_checkbox_input:checked + .login_form_checkbox_label:after {
+        .login__form-checkbox-input:checked + .login__form-checkbox-label:after {
           display: block;
         }
       }
-      .login_form_text_gray {
+      .login__form-text-gray {
         font-weight: 300;
         font-size: 13px;
         line-height: 16px;
@@ -1082,7 +1082,7 @@ body {
         margin-bottom: 39px;
         width: 358px;
       }
-      .login_form_button {
+      .login__form-button {
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
@@ -1091,28 +1091,28 @@ body {
         width: 167px;
         height: 50px;
         border: none;
-        .login_form_button_arrow {
+        .login__form-button-arrow {
           margin-left: 20px;
           fill: white;
         }
       }
-      .login_form_button:hover,
-      .login_form_button:focus {
+      .login__form-button:hover,
+      .login__form-button:focus {
         cursor: pointer;
         background: white;
         color: #f16d7f;
         border: 1px solid #f16d7f;
-        .login_form_button_arrow {
+        .login__form-button-arrow {
           fill: #f16d7f;
         }
       }
     }
-    .login_form_text_box {
+    .login__form-text-box {
       font-weight: 300;
       font-size: 24px;
       line-height: 29px;
       color: #000000;
-      .login_form_text {
+      .login__form-text {
         margin-bottom: 16px;
       }
     }
@@ -1233,9 +1233,17 @@ body {
     margin-left: 16px;
     margin-right: 16px;
   }
-  .login_box {
+  .login__box {
     margin-left: 16px !important;
     margin-right: 16px !important;
+  }
+  .login__form-box {
+    margin-right: 23px !important;
+  }
+  .login__form-text-box {
+    font-weight: 300 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
   }
 }
 
@@ -1339,10 +1347,10 @@ body {
     height: 100%;
     background-size: cover;
   }
-  .login_form_box {
+  .login__form-box {
     margin-right: 22px !important;
   }
-  .login_form_text_box {
+  .login__form-text-box {
     font-size: 16px !important;
     line-height: 19px !important;
   }
@@ -1580,16 +1588,19 @@ body {
       overflow: hidden;
     }
   }
-  .login_box {
+  .login__box {
     flex-direction: column;
     margin-left: 16px;
     margin-right: 16px;
-    .login_form_box {
+    .login__form-box {
       margin-right: 0 !important;
       margin: 0 auto;
     }
   }
-  .login_form_text_box {
+  .login__form-text-box {
     margin-top: 40px;
+  }
+  .login__form-input {
+    width: 319px !important;
   }
 }
