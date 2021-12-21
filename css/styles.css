@@ -72,9 +72,70 @@ body {
   fill: gray;
 }
 
+.nav .nav__container .nav__search-button {
+  background-color: #222222;
+  border: none;
+  fill: white;
+}
+
+.nav .nav__container .nav__search-button:hover,
+.nav .nav__container .nav__search-button:focus {
+  cursor: pointer;
+  outline: none;
+  fill: gray;
+}
+
 .nav .nav__container .nav__menu__link {
   background-color: #222222;
   fill: white;
+}
+
+.nav .nav__container .nav__menu__search-link {
+  background-color: white;
+  fill: white;
+  position: absolute;
+  display: none;
+}
+
+.nav .nav__container .nav__menu__search-link::before {
+  content: "";
+  background-color: white;
+  fill: #222222;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 27px;
+  height: 28px;
+  background-image: url(image/search.svg);
+}
+
+.nav .nav__container .nav__menu__search-link-placeholder::-webkit-input-placeholder {
+  display: -webkit-box;
+  display: flex;
+  padding-left: 30px;
+}
+
+.nav .nav__container .nav__menu__search-link-placeholder:-ms-input-placeholder {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+}
+
+.nav .nav__container .nav__menu__search-link-placeholder::-ms-input-placeholder {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+}
+
+.nav .nav__container .nav__menu__search-link-placeholder::placeholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+}
+
+.nav .nav__container .display-block {
+  display: block;
 }
 
 .nav .nav__container .nav__menu__link:focus,
@@ -82,6 +143,13 @@ body {
   cursor: pointer;
   outline: none;
   fill: gray;
+}
+
+.nav .nav__container [type="search"] {
+  padding: 10px 20px;
+  border: none;
+  outline: 1px solid #222222;
+  background-color: white;
 }
 
 .nav .nav__container .nav__menu-item {
@@ -629,6 +697,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.products .products__box .products__card .products__card-img-shadow .products__add-to-cart:hover {
+  border: 1px solid #f16d7f;
+  background-color: #f16d7f;
 }
 
 .products .products__box .products__card .products__card-img-shadow .products__add-to-cart-img-margin {
@@ -1503,7 +1576,8 @@ body {
   display: none;
 }
 
-.login .login__box .login__form-box .login__form-checkbox .login__form-checkbox-input:checked + .login__form-checkbox-label:after {
+.login .login__box .login__form-box .login__form-checkbox .login__form-checkbox-input:checked
++ .login__form-checkbox-label:after {
   display: block;
 }
 
