@@ -1,0 +1,116 @@
+.hero_product_description_box {
+  display: flex;
+  justify-content: center;
+  .hero_product_description {
+    position: absolute;
+    top: 935px;
+    width: 1138px;
+    height: 598px;
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    background: #ffffff;
+    text-align: center;
+    .hero_product_heading_pink {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #f16d7f;
+      margin-top: 64px;
+      margin-bottom: 12px;
+    }
+    .hero_product_line {
+      width: 63px;
+      height: 3px;
+      background-color: #ef5b70;
+      margin: 0 auto;
+      margin-bottom: 12px;
+    }
+    .hero_product_heading_grey {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+      color: #4d4d4d;
+      margin-bottom: 48px;
+    }
+    .hero_product_text {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5e5e5e;
+      padding: 0 25%;
+      margin-bottom: 32px;
+    }
+    .hero_product_price {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ef5b70;
+      margin-bottom: 65px;
+    }
+    .hero_product_line_grey {
+      border: 1px solid #eaeaea;
+      margin: 0 auto;
+      width: 641px;
+    }
+  }
+  .products_filter {
+    .products_filter_list_right:hover {
+      .products_filter_menu {
+        display: flex;
+      }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+    margin-top: 65px;
+    .products_filter_list {
+      position: relative;
+      font-size: 14px;
+      line-height: 17px;
+      .products_filter_list_menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 150px;
+        width: 59px;
+        height: 83px;
+        background: #ffffff;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        font-size: 14px;
+        line-height: 16px;
+        color: #6f6e6e;
+        padding: 10px 10px;
+        align-items: flex-start;
+        justify-content: space-between;
+        .products_filter_list_menu_text {
+          margin-left: 10px;
+        }
+      }
+      .products_filter_img_drop {
+        margin-left: 10px;
+        margin-right: 28px;
+      }
+      .products_filter_list_text {
+        text-decoration: none;
+        color: #6f6e6e;
+      }
+    }
+  }
+  .hero_products_add_to_cart {
+    border: 1px solid #ff6a6a;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f26376;
+    padding: 14px 35px;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    width: 141px;
+    justify-items: center;
+    margin: 0 auto;
+  }
+  .hero_products_add_to_cart_img_margin {
+    margin-right: 23px;
+  }
+}
