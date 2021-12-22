@@ -22,9 +22,11 @@
 
 @import "./blocks/_login.scss";
 
-@import "./blocks/_cart_container.scss";
+@import "./blocks/_cart.scss";
 
 @import "./blocks/_hero_product_description.scss";
+
+@import "./blocks/_breadcrumbs.scss";
 
 @media (min-width: 768px) and (max-width: 1172px) {
   .nav__menu__left {

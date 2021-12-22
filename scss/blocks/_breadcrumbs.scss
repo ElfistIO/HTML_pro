@@ -1,0 +1,12 @@
+.breadcrumbs {
+  background-color: #f8f3f4;
+  .breadcrumbs__box {
+    max-width: $width-site;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 29px;
+    color: #f16d7f;
+    text-transform: uppercase;
+    padding: 60px 0;
+  }
+}

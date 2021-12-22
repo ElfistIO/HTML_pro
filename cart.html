@@ -125,53 +125,61 @@
         </div>
     </header>
     <main>
-        <section class="cart_container">
-            <div class="cart_box">
-                <div class="cart_product_cards_box">
-                    <div class="cart_product_card">
-                        <img src="image/product_3.png" alt="product_3" class="cart_product_card_img">
-                        <div class="cart_product_card_text_box">
-                            <p class="cart_product_card_text_heading">MANGO  PEOPLE  T-SHIRT</p>
-                            <p class="cart_product_card_text">Price: <b class="text_pink">$300</b></p>
-                            <p class="cart_product_card_text">Color: Red</p>
-                            <p class="cart_product_card_text">Size: XL</p>
-                            <p class="cart_product_card_text">Quantity: <a href="#" class="cart_product_card_quantity">2</a></p>
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__box">
+                <span>shopping cart</span>
+            </div>
+        </div>
+        <section class="cart">
+            <div class="cart__box">
+                <div class="cart__product-cards-box">
+                    <div class="cart__product-card">
+                        <img src="image/product_3.png" alt="product_3" class="cart__product-card-img">
+                        <div class="cart__product-card-text-box">
+                            <p class="cart__product-card-text-heading">MANGO  PEOPLE  T-SHIRT</p>
+                            <p class="cart__product-card-text">Price: <span class="cart__product-card-text-pink">$300</span></p>
+                            <p class="cart__product-card-text">Color: Red</p>
+                            <p class="cart__product-card-text">Size: XL</p>
+                            <p class="cart__product-card-text">Quantity: <a href="#" class="cart__product-card-quantity">2</a></p>
                         </div>
-                        <img src="image/close.svg" alt="delete_item" width="18" height="18" class="cart_product_card_remove">
+                        <img src="image/close.svg" alt="delete_item" width="18" height="18" class="cart__product-card-remove">
                     </div>
-                    <div class="cart_product_card">
-                        <img src="image/product_4.png" alt="product_3" class="cart_product_card_img">
-                        <div class="cart_product_card_text_box">
-                            <p class="cart_product_card_text_heading">MANGO  PEOPLE  T-SHIRT</p>
-                            <p class="cart_product_card_text">Price: <b class="text_pink">$300</b></p>
-                            <p class="cart_product_card_text">Color: Red</p>
-                            <p class="cart_product_card_text">Size: XL</p>
-                            <p class="cart_product_card_text">Quantity: <a href="#" class="cart_product_card_quantity">2</a></p>
+                    <div class="cart__product-card">
+                        <img src="image/product_4.png" alt="product_3" class="cart__product-card-img">
+                        <div class="cart__product-card-text-box">
+                            <p class="cart__product-card-text-heading">MANGO  PEOPLE  T-SHIRT</p>
+                            <p class="cart__product-card-text">Price: <span class="cart__product-card-text-pink">$300</span></p>
+                            <p class="cart__product-card-text">Color: Red</p>
+                            <p class="cart__product-card-text">Size: XL</p>
+                            <p class="cart__product-card-text">Quantity: <a href="#" class="cart__product-card-quantity">2</a></p>
                         </div>
-                        <img src="image/close.svg" alt="delete_item" width="18" height="18" class="cart_product_card_remove">
+                        <img src="image/close.svg" alt="delete_item" width="18" height="18" class="cart__product-card-remove">
                     </div>
-                    <div class="cart_product_buttons_box">
-                        <a href="#" class="cart_product_button">CLEAR SHOPPING CART</a>
-                        <a href="#" class="cart_product_button">CONTINUE SHOPPING</a>
+                    <div class="cart__product-buttons-box">
+                        <a href="#" class="cart__product-button">CLEAR SHOPPING CART</a>
+                        <a href="#" class="cart__product-button">CONTINUE SHOPPING</a>
                     </div>
                 </div>
-                <div class="cart_checkout_box">
-                    <div class="cart_checkout_shipping">
-                        <p class="cart_checkout_shipping_header">SHIPPING ADRESS</p>
-                        <input type="text" placeholder="Russia" class="cart_checkout_shipping_input">
-                        <input type="text" placeholder="State" class="cart_checkout_shipping_input">
-                        <input type="text" placeholder="Postcode/ZIP" class="cart_checkout_shipping_input">
-                        <a href="#" class="cart_product_button">GET A QUOTE</a>
-                    </div>
-                    <div class="cart_checkout_total">
-                        <p class="cart_checkout_total_text_sub">SUB TOTAL <b class="cart_checkout_total_text_sub_margin">$900</b></p>
-                        <p class="cart_checkout_total_text_grand">GRAND TOTAL <b class="cart_checkout_total_text_sub_pink">$900</b></p>
-                        <hr class="cart_checkout_total_hr"> 
-                        <div class="cart_checkout_button_box">
-                            <a href="#" class="cart_checkout_button">PROCEED TO CHECKOUT</a>
+                <form action="" class="cart__checkout-box">
+                    <fieldset class="cart__checkout-shipping">
+                        <legend class="cart__checkout-shipping-header">SHIPPING ADRESS</legend>
+                        <input type="text" placeholder="Russia" class="cart__checkout-shipping-input" id="country" required>
+                        <label for="country" class="visually-hidden">Country</label>
+                        <input type="text" placeholder="State" class="cart__checkout-shipping-input" id="state" required>
+                        <label for="state" class="visually-hidden">State</label>
+                        <input type="text" placeholder="Postcode/ZIP" class="cart__checkout-shipping-input" id="postcode" required>
+                        <label for="postcode" class="visually-hidden">Postcode</label>
+                        <button class="cart__product-button" type="submit">GET A QUOTE</button>
+                    </fieldset>
+                    <div class="cart__checkout-total">
+                        <p class="cart__checkout-total-text-sub">SUB TOTAL <span class="cart__checkout-total-text-sub-margin">$900</span></p>
+                        <p class="cart__checkout-total-text-grand">GRAND TOTAL <span class="cart__checkout-total-text-sub-pink">$900</span></p>
+                        <hr class="cart__checkout-total-hr"> 
+                        <div class="cart__checkout-button-box">
+                            <a href="#" class="cart__checkout-button">PROCEED TO CHECKOUT</a>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     </main>
