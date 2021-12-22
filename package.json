@@ -1,0 +1,25 @@
+{
+  "name": "html_pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElfistIO/HTML_pro.git"
+  },
+  "author": "Elfist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElfistIO/HTML_pro/issues"
+  },
+  "homepage": "https://github.com/ElfistIO/HTML_pro#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  }
+}
