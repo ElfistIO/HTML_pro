@@ -220,15 +220,14 @@ body {
 }
 
 .nav .nav__container .nav__menu__search-link {
-  background-color: white;
-  fill: white;
+  background-color: transparent;
   position: absolute;
   display: none;
 }
 
 .nav .nav__container .nav__menu__search-link::before {
   content: "";
-  background-color: white;
+  background-color: transparent;
   fill: #222222;
   position: absolute;
   top: 4px;
