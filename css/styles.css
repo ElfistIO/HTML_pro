@@ -1576,6 +1576,7 @@ body {
   width: 100px;
   height: 34px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .cart .cart__checkout-box .cart__checkout-shipping .cart__product-button:hover {
