@@ -1427,6 +1427,7 @@ body {
   line-height: 17px;
   color: #4a4a4a;
   padding: 14px 38px;
+  text-transform: uppercase;
 }
 
 .cart .cart__box .cart__product-cards-box .cart__product-buttons-box .cart__product-button:hover {
@@ -1468,6 +1469,7 @@ body {
   color: #222222;
   margin-bottom: 42px;
   width: 200px;
+  text-transform: uppercase;
 }
 
 .cart .cart__box .cart__product-cards-box .cart__product-card .cart__product-card-text-box .cart__product-card-text {
@@ -1520,6 +1522,7 @@ body {
   color: #222222;
   margin-bottom: 20px;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .cart .cart__checkout-box .cart__checkout-shipping .cart__checkout-shipping-input {
@@ -1593,6 +1596,7 @@ body {
   line-height: 13px;
   color: #4a4a4a;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .cart .cart__checkout-box .cart__checkout-total .cart__checkout-total-text-grand {
@@ -1600,6 +1604,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .cart .cart__checkout-box .cart__checkout-total .cart__checkout-total-hr {
@@ -1634,6 +1639,7 @@ body {
   background: #f16d7f;
   padding: 14px 38px;
   margin: 0 auto;
+  text-transform: uppercase;
 }
 
 .cart .cart__checkout-box .cart__checkout-total .cart__checkout-button:hover {
