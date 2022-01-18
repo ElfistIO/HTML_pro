@@ -845,11 +845,12 @@ body {
 .products .products__box {
   margin-top: 48px;
   margin-bottom: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -858,7 +859,6 @@ body {
 
 .products .products__box .products__card {
   width: 360px;
-  margin-bottom: 30px;
   text-align: left;
   background: #f8f8f8;
   display: -webkit-box;
@@ -961,37 +961,28 @@ body {
   display: flex;
 }
 
-.products .products_filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.products .products__filter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
   margin-top: 48px;
-  margin-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.products .products_filter .products_filter_list_right:hover .products_filter_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.products .products_filter .products_filter_list {
+.products .products__filter .products__filter-list {
   position: relative;
-  margin-right: 400px;
-  width: 340px;
   font-size: 14px;
   line-height: 17px;
+  text-align: left;
 }
 
-.products .products_filter .products_filter_list .products_filter_list_menu {
+.products .products__filter .products__filter-list .products__filter-list-menu {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1016,33 +1007,28 @@ body {
           justify-content: space-between;
 }
 
-.products .products_filter .products_filter_list .products_filter_list_menu .products_filter_list_menu_text {
+.products .products__filter .products__filter-list .products__filter-list-menu .products__filter-list-menu-text {
   margin-left: 10px;
 }
 
-.products .products_filter .products_filter_list .products_filter_img_drop {
-  margin-left: 10px;
-  margin-right: 28px;
-}
-
-.products .products_filter .products_filter_list .products_filter_list_text {
+.products .products__filter .products__filter-list .products__filter-list-text {
   text-decoration: none;
   color: #6f6e6e;
+  margin-left: 28px;
 }
 
-.products .products_filter_list_right {
+.products .products__filter-list-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.products .products_filter_list_right .products_filter_menu {
+.products .products__filter-list-menu .products__filter-menu {
   display: none;
   -webkit-box-shadow: 5px 10px 25px #c9c9c9;
           box-shadow: 5px 10px 25px #c9c9c9;
   position: absolute;
-  left: -16px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1053,7 +1039,7 @@ body {
   text-align: left;
 }
 
-.products .products_filter_list_right .products_filter_menu .products_filter_menu_category_link {
+.products .products__filter-list-menu .products__filter-menu .products_filter_menu_category_link {
   margin-bottom: 11px;
   margin-left: 19px;
   text-decoration: none;
@@ -1062,7 +1048,7 @@ body {
   color: #6f6e6e;
 }
 
-.products .products_filter_list_right .products_filter_menu .products_filter_menu_heading {
+.products .products__filter-list-menu .products__filter-menu .products_filter_menu_heading {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -1833,6 +1819,28 @@ body {
   padding: 60px 0;
 }
 
+.breadcrumbs .breadcrumbs__box-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.breadcrumbs .breadcrumbs__box-catalog .breadcrumbs__link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.breadcrumbs .breadcrumbs__box-catalog .breadcrumbs__link-pink {
+  text-decoration: none;
+  color: #f16d7f;
+  font-weight: 700;
+}
+
 @media (min-width: 768px) and (max-width: 1172px) {
   .nav__menu__left {
     margin-left: 32px;
@@ -1936,6 +1944,25 @@ body {
     margin-left: 16px;
     margin-right: 16px;
   }
+  .products__box {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    grid-column-gap: 16px !important;
+  }
+  .products__box .products__card {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .products__filter {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    margin-top: 24px !important;
+  }
+  .products__filter .products__filter-list {
+    text-align: right !important;
+  }
   .feature {
     padding-left: 16px;
     padding-right: 16px;
@@ -1965,6 +1992,7 @@ body {
   }
   .breadcrumbs__box {
     padding-left: 32px !important;
+    padding-right: 32px !important;
   }
   .cart__box {
     margin-left: 16px;
@@ -2212,6 +2240,19 @@ body {
   }
   .breadcrumbs__box {
     padding-left: 32px !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0 !important;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .breadcrumbs__box .breadcrumbs__link {
+    margin-top: 32px;
   }
   .hero_catalog_heading {
     margin-left: 16px;
@@ -2279,10 +2320,20 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
+  .products {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
   .products__box {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .products__box .products__card {
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .products_filter_list_right_hide {
     display: none;

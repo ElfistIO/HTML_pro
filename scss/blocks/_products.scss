@@ -19,13 +19,14 @@
   .products__box {
     margin-top: 48px;
     margin-bottom: 48px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     justify-content: space-between;
     text-align: center;
     .products__card {
       width: 360px;
-      margin-bottom: 30px;
       text-align: left;
       background: #f8f8f8;
       display: flex;
@@ -104,26 +105,20 @@
       display: flex;
     }
   }
-  .products_filter {
-    .products_filter_list_right:hover {
-      .products_filter_menu {
-        display: flex;
-      }
-    }
-    display: flex;
+  .products__filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
     margin-top: 48px;
-    margin-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
     align-items: center;
-    justify-content: space-between;
-    .products_filter_list {
+    .products__filter-list {
       position: relative;
-      margin-right: 400px;
-      width: 340px;
       font-size: 14px;
       line-height: 17px;
-      .products_filter_list_menu {
+      text-align: left;
+      .products__filter-list-menu {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -138,28 +133,24 @@
         padding: 10px 10px;
         align-items: flex-start;
         justify-content: space-between;
-        .products_filter_list_menu_text {
+        .products__filter-list-menu-text {
           margin-left: 10px;
         }
       }
-      .products_filter_img_drop {
-        margin-left: 10px;
-        margin-right: 28px;
-      }
-      .products_filter_list_text {
+      .products__filter-list-text {
         text-decoration: none;
         color: #6f6e6e;
+        margin-left: 28px;
       }
     }
   }
-  .products_filter_list_right {
+  .products__filter-list-menu {
     display: flex;
     position: relative;
-    .products_filter_menu {
+    .products__filter-menu {
       display: none;
       box-shadow: 5px 10px 25px #c9c9c9;
       position: absolute;
-      left: -16px;
       flex-direction: column;
       background-color: #ffffff;
       padding: 13px 16px;

@@ -9,4 +9,19 @@
     text-transform: uppercase;
     padding: 60px 0;
   }
+  .breadcrumbs__box-catalog {
+    display: flex;
+    justify-content: space-between;
+    .breadcrumbs__link {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #636363;
+    }
+    .breadcrumbs__link-pink {
+      text-decoration: none;
+      color: #f16d7f;
+      font-weight: 700;
+    }
+  }
 }
