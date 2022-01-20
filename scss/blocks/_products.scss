@@ -118,11 +118,15 @@
       font-size: 14px;
       line-height: 17px;
       text-align: left;
+      .display-block {
+        display: flex !important;
+      }
       .products__filter-list-menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        left: 150px;
+        left: 170px;
+        top: 25px;
         width: 59px;
         height: 83px;
         background: #ffffff;
@@ -144,9 +148,17 @@
       }
     }
   }
+  .products__filter-list-right-hide {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
   .products__filter-list-menu {
     display: flex;
     position: relative;
+    .display-block {
+      display: flex !important;
+    }
     .products__filter-menu {
       display: none;
       box-shadow: 5px 10px 25px #c9c9c9;
@@ -156,7 +168,7 @@
       padding: 13px 16px;
       width: 328px;
       text-align: left;
-      .products_filter_menu_category_link {
+      .products__filter-menu-category-link {
         margin-bottom: 11px;
         margin-left: 19px;
         text-decoration: none;
@@ -164,7 +176,7 @@
         line-height: 17px;
         color: #6f6e6e;
       }
-      .products_filter_menu_heading {
+      .products__filter-menu-heading {
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
@@ -174,7 +186,7 @@
       }
     }
   }
-  .products_filter_menu_line_box {
+  .products__filter-menu-line-box {
     height: 37px;
     font-size: 14px;
     line-height: 17px;
@@ -182,19 +194,19 @@
     display: flex;
     font-weight: 400;
     align-items: center;
-    .products_filter_menu_line {
+    .products__filter-menu-line {
       width: 7px;
       height: 37px;
       background-color: #ef5b70;
       margin-right: 11px;
     }
   }
-  .hr_color {
+  .products__hr-color {
     color: #ebebeb;
     background-color: #ebebeb;
     margin-bottom: 18px;
   }
-  .products_filter_img {
+  .products__filter-img {
     margin-left: 11px;
   }
   .products_pagination_box {
@@ -222,11 +234,6 @@
       font-size: 16px;
       line-height: 19px;
       color: rgb(180, 180, 180);
-    }
-  }
-  .products_filter_list:hover {
-    .products_filter_list_menu {
-      display: flex;
     }
   }
 }
