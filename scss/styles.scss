@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url(../fonts/Lato-Black.ttf) format("truetype");
+  src: url(../fonts/Lato-BlackItalic.ttf) format("truetype");
+  src: url(../fonts/Lato-Bold.ttf) format("truetype");
+  src: url(../fonts/Lato-BoldItalic.ttf) format("truetype");
+  src: url(../fonts/Lato-Italic.ttf) format("truetype");
+  src: url(../fonts/Lato-Light.ttf) format("truetype");
+  src: url(../fonts/Lato-LightItalic.ttf) format("truetype");
+  src: url(../fonts/Lato-Regular.ttf) format("truetype");
+  src: url(../fonts/Lato-Thin.ttf) format("truetype");
+  src: url(../fonts/Lato-ThinItalic.ttf) format("truetype");
+}
+
 @import "./reset";
 
 @import "./_variables.scss";
