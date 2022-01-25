@@ -213,7 +213,7 @@
     display: flex;
     justify-content: center;
   }
-  .products_pagination {
+  .products__pagination {
     justify-self: center;
     height: 43px;
     width: 283px;
@@ -221,14 +221,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    .products_pagination_active {
+    .products__pagination-active {
       text-decoration: none;
       font-weight: 300;
       font-size: 16px;
       line-height: 19px;
       color: #ef5b70;
     }
-    .products_pagination_inactive {
+    .products__pagination-inactive {
       text-decoration: none;
       font-weight: 300;
       font-size: 16px;

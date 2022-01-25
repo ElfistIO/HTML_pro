@@ -1132,7 +1132,7 @@ body {
           justify-content: center;
 }
 
-.products .products_pagination {
+.products .products__pagination {
   justify-self: center;
   height: 43px;
   width: 283px;
@@ -1148,7 +1148,7 @@ body {
           align-items: center;
 }
 
-.products .products_pagination .products_pagination_active {
+.products .products__pagination .products__pagination-active {
   text-decoration: none;
   font-weight: 300;
   font-size: 16px;
@@ -1156,7 +1156,7 @@ body {
   color: #ef5b70;
 }
 
-.products .products_pagination .products_pagination_inactive {
+.products .products__pagination .products__pagination-inactive {
   text-decoration: none;
   font-weight: 300;
   font-size: 16px;
@@ -1215,7 +1215,7 @@ body {
   color: #fbfbfb;
 }
 
-.hero_product {
+.hero__product {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1231,14 +1231,14 @@ body {
   margin-bottom: 600px;
 }
 
-.hero_product .hero_product_left {
+.hero__product .hero__product-left {
   height: 23px;
   width: 13px;
   background: rgba(42, 42, 42, 0.15);
   padding: 12px 17px;
 }
 
-.hero_product .hero_product_right {
+.hero__product .hero__product-right {
   height: 23px;
   width: 13px;
   background: rgba(42, 42, 42, 0.15);
@@ -1677,7 +1677,7 @@ body {
   outline: 1px solid #a4a4a4;
 }
 
-.hero_product_description_box {
+.hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1686,7 +1686,7 @@ body {
           justify-content: center;
 }
 
-.hero_product_description_box .hero_product_description {
+.hero .hero__product-description {
   position: absolute;
   top: 935px;
   width: 1138px;
@@ -1697,7 +1697,7 @@ body {
   text-align: center;
 }
 
-.hero_product_description_box .hero_product_description .hero_product_heading_pink {
+.hero .hero__product-description .hero__product-heading-pink {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -1706,7 +1706,7 @@ body {
   margin-bottom: 12px;
 }
 
-.hero_product_description_box .hero_product_description .hero_product_line {
+.hero .hero__product-description .hero__product-line {
   width: 63px;
   height: 3px;
   background-color: #ef5b70;
@@ -1714,7 +1714,7 @@ body {
   margin-bottom: 12px;
 }
 
-.hero_product_description_box .hero_product_description .hero_product_heading_grey {
+.hero .hero__product-description .hero__product-heading-grey {
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
@@ -1722,7 +1722,7 @@ body {
   margin-bottom: 48px;
 }
 
-.hero_product_description_box .hero_product_description .hero_product_text {
+.hero .hero__product-description .hero__product-text {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -1731,7 +1731,7 @@ body {
   margin-bottom: 32px;
 }
 
-.hero_product_description_box .hero_product_description .hero_product_price {
+.hero .hero__product-description .hero__product-price {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -1739,46 +1739,57 @@ body {
   margin-bottom: 65px;
 }
 
-.hero_product_description_box .hero_product_description .hero_product_line_grey {
+.hero .hero__product-description .hero__product-line-grey {
   border: 1px solid #eaeaea;
   margin: 0 auto;
   width: 641px;
 }
 
-.hero_product_description_box .products_filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.hero .products__filter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-top: 48px;
+  margin-bottom: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 48px;
-  margin-top: 65px;
 }
 
-.hero_product_description_box .products_filter .products_filter_list_right:hover .products_filter_menu {
+.hero .products__filter .products__filter-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.hero_product_description_box .products_filter .products_filter_list {
   position: relative;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 14px;
   line-height: 17px;
+  text-align: left;
 }
 
-.hero_product_description_box .products_filter .products_filter_list .products_filter_list_menu {
+.hero .products__filter .products__filter-list .display-block {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.hero .products__filter .products__filter-list .products__filter-list-menu {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  left: 150px;
+  left: 170px;
+  top: 25px;
   width: 59px;
   height: 83px;
   background: #ffffff;
@@ -1796,21 +1807,21 @@ body {
           justify-content: space-between;
 }
 
-.hero_product_description_box .products_filter .products_filter_list .products_filter_list_menu .products_filter_list_menu_text {
+.hero .products__filter .products__filter-list .products__filter-list-menu .products__filter-list-menu-text {
   margin-left: 10px;
 }
 
-.hero_product_description_box .products_filter .products_filter_list .products_filter_img_drop {
+.hero .products__filter .products__filter-list .products__filter-img-drop {
   margin-left: 10px;
   margin-right: 28px;
 }
 
-.hero_product_description_box .products_filter .products_filter_list .products_filter_list_text {
+.hero .products__filter .products__filter-list .products__filter-list-text {
   text-decoration: none;
   color: #6f6e6e;
 }
 
-.hero_product_description_box .hero_products_add_to_cart {
+.hero .hero__products-add-to-cart {
   border: 1px solid #ff6a6a;
   font-size: 16px;
   line-height: 19px;
@@ -1828,7 +1839,7 @@ body {
   margin: 0 auto;
 }
 
-.hero_product_description_box .hero_products_add_to_cart_img_margin {
+.hero .hero__products-add-to-cart-img-margin {
   margin-right: 23px;
 }
 

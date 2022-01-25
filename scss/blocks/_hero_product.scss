@@ -1,4 +1,4 @@
-.hero_product {
+.hero__product {
   position: relative;
   display: flex;
   height: 777px;
@@ -6,13 +6,13 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 600px;
-  .hero_product_left {
+  .hero__product-left {
     height: 23px;
     width: 13px;
     background: rgba(42, 42, 42, 0.15);
     padding: 12px 17px;
   }
-  .hero_product_right {
+  .hero__product-right {
     height: 23px;
     width: 13px;
     background: rgba(42, 42, 42, 0.15);
