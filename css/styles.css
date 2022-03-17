@@ -680,7 +680,7 @@ body {
 
 .hero .hero__container .hero__img {
   position: absolute;
-  left: -225px;
+  left: -710px;
 }
 
 .hero .hero__container .hero__text-box {
@@ -691,7 +691,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  right: 100px;
+  right: -400px;
   top: 290px;
 }
 
@@ -1902,6 +1902,7 @@ body {
   .hero__container .hero__text-box {
     position: relative !important;
     margin-right: 34px;
+    right: 0 !important;
     top: 0 !important;
   }
   .hero__container .hero__text-box .hero__text:before {
