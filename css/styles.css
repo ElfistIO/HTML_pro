@@ -344,7 +344,7 @@ body {
 .nav .nav__main-menu {
   display: none;
   position: absolute;
-  top: 76px;
+  top: 77px;
   right: 0;
   width: 232px;
   height: 764px;
@@ -1123,7 +1123,7 @@ body {
   margin-left: 11px;
 }
 
-.products .products_pagination_box {
+.products .products__pagination-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1216,7 +1216,6 @@ body {
 }
 
 .hero__product {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1688,8 +1687,8 @@ body {
 
 .hero .hero__product-description {
   position: absolute;
-  top: 935px;
   width: 1138px;
+  top: -650px;
   height: 598px;
   margin: 0 auto;
   border: 1px solid #eaeaea;
@@ -2002,12 +2001,18 @@ body {
   .products__filter .products__filter-list {
     text-align: right !important;
   }
+  .hero__product-description {
+    width: 100% !important;
+  }
   .feature {
     padding-left: 16px;
     padding-right: 16px;
   }
   .feature .feature__box {
     width: 100%;
+  }
+  .feature .feature__container {
+    height: 200px;
   }
   .footer__box-top {
     width: 100%;
@@ -2286,7 +2291,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 0 !important;
     padding-top: 24px;
     padding-bottom: 46px;
   }
@@ -2434,6 +2438,12 @@ body {
     margin-right: 0;
     margin-bottom: 9px;
   }
+  .hero__product {
+    height: 100%;
+  }
+  .hero__product img {
+    width: 100%;
+  }
   .hero_product_img {
     width: 100%;
     display: -webkit-box;
@@ -2457,8 +2467,12 @@ body {
   .hero_products_add_to_cart {
     margin-bottom: 65px !important;
   }
-  .hero_product_description {
+  .hero__product-description {
     height: auto !important;
+    width: 100% !important;
+  }
+  .hero__product-line-grey {
+    width: 100% !important;
   }
   .cart__box {
     -webkit-box-orient: vertical;
@@ -2475,6 +2489,7 @@ body {
         -ms-flex-direction: column !important;
             flex-direction: column !important;
     margin-bottom: 96px !important;
+    width: auto !important;
   }
   .cart__checkout-box .cart__checkout-shipping {
     margin-left: 10px;
